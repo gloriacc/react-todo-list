@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Todo = () => {
+const Item = () => {
   return (
     <div>
       item
     </div>
   )
 }
-export {Todo};
+export {Item};

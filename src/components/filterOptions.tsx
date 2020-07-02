@@ -1,0 +1,1 @@
+export const filterOptions = ['all', 'todo', 'done'];

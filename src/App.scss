@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: 14px;
   > .wrapper {
     border: 1px solid #999;
     border-radius: 18px;
     width: 400px;
+    min-height: 400px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -16,13 +18,10 @@
         margin-right: 20px;
         outline: none;
         padding: 4px 6px;
-        line-height: 16px;
-        font-size: 16px;
         height: 28px;
       }
       > button {
         line-height: 16px;
-        font-size: 16px;
         padding: 4px 6px;
       }
     }
@@ -32,11 +31,28 @@
       align-items: center;
       margin: 24px 0;
       > li {
-
+        cursor: pointer;
+        &.activeTab {
+          border-bottom: 1px solid #999;
+        }
       }
     }
     > .itemList {
       text-align: center;
+      > li {
+        line-height: 28px;
+        > div {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+          &.doneStyle {
+            text-decoration: line-through;
+            color: #ccc;
+            font-style: italic;
+          }
+        }
+      }
     }
   }
 }
